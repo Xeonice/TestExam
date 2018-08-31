@@ -6,9 +6,10 @@ const rl = readline.createInterface({
     prompt: '>>'
 
 });
-console.log("请输入回文数");
+console.log("请输入需要检测的数组（示例：1 2 2 2）");
 rl.on('line', (data) => {
     // 处理
     var result = new DealMethod();
     console.log(result.deal(data));
+    rl.close();
 });

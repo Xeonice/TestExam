@@ -1,10 +1,12 @@
 module.exports = class {
     deal(inputNum) {
+        let result = '';
         if (this.daozhi(inputNum) == inputNum) {
-            console.log(inputNum + "是回文数");
+            result = inputNum + "是回文数"
         } else {
-            console.log(inputNum + "不是回文数");
+            result = inputNum + "是回文数"
         }
+        return result;
     }
     daozhi(num) {
         let newNumber = 0;
